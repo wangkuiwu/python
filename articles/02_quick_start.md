@@ -1,20 +1,64 @@
 
-### Python 学习资料汇总
+### Python-02 快速入门
 
-1, basic: Python的基础内容的示例。 
-(1) 运行的方式
-  $ cd basic
-  $ python3 01_hello.py
-(2) basic中的每个文件，都包含该文件内容的注释说明。
-(3) 在python3.6.5上可运行
+#### 1. Mac安装Python
+##### 1.1 安装Python3  
+(1) 通过下面指令安装Python3   
 
-2, database: Python的数据库相关内容。
-(1) 主要介绍了mysql数据库的使用
+```
+$ brew install python3
+```  
+会自动下载最新的python3 和 pip3  
 
-3, website: Python的web框架的相关内容。
-(1) 主要介绍了tornado框架
+(2) 查看安装python的版本  
 
-4, libs: 一些工具
-5, network_crawler: 网络爬虫相关的内容
-6, workout: 工作中用到的一些python工具
+```
+$ python3  --version
+$ pip3  --version   
+```  
+
+##### 1.1 安装Python2.7
+(1) 通过下面指令安装Python2.7
+
+```
+$ brew install python@2
+```   
+安装完毕后会显示python路径   
+ 
+(2) 修改PATH参数，添加python路径。例如，修改~/.zshrc或~/.bashrc 
+ 
+```
+export PATH="/usr/local/Cellar/python@2/2.7.15/bin:$PATH"
+```
+
+
+#### 2. 运行hello world 
+(1) 编辑01_hello.py文件。  
+
+```
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+print('hello world')
+```
+
+(2) 运行01_hello.py文件。
+
+```
+$ python3 01_hello.py
+```  
+或者
+
+```
+$ ./01_hello.py
+```
+
+输出结果：  
+```
+hello world  
+```  
+
+说明：  
+1) `#!/usr/bin/env python3`表示用`./01_hello.py`执行时，用python3解析该程序。  
+2) `# -*- coding: utf-8 -*-`表示源文件支持UTF-8编码(可以显示中文)。   
+3) `print('hello world')`表示输出`hello world`。  
 
